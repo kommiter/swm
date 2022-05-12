@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "SBAggroL";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "SBAggroL";
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  margin-top: 5%;
+  margin-left: 25%;
+  width: 80%;
+  display: grid;
+  height: 100%;
+}
+
+.logo {
+  padding: 2%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #191919;
+  text-align: left;
+}
+
+#full_cover {
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+#inner {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+
+#title {
+  margin-top: 1rem;
+  color: white;
+}
+
+#title h1 {
+  text-align: center;
+  display: block;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#title h3 {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+}
+
+#main_image {
+  margin-left: 5%;
+  width: 85%;
+  height: 85%;
+}
+
+.start-btn {
+  margin: 0;
+  justify-content: center;
+  background-color: white;
+  text-align: center;
+  width: 30%;
+  height: 100%;
+  margin-left: 35%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  transition: background-color, color, 1s;
+  border: solid white;
+}
+
+.start {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 3px;
+}
+
+.start-btn:hover {
+  background-color: #191919;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}

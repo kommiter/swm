@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lagn="ko">
+  <head>
+    <link rel="stylesheet" href="upload_file.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1" />
+    <title>전투력 측정기</title>
+  </head>
+  <body style="background-color: black">
+    <header class="header">
+      <h1><a href="../index.html" style="color: aliceblue">DNA_TUNA</a></h1>
+    </header>
+    <div id="full_cover" class="mv">
+      <div id="inner" class="inner_page">
+        <div class="upload-block">
+          <div class="main-image">
+            <img src="main_image.png" onclick="alert('Do not Touch me');" />
+          </div>
+          <div class="question">
+            <h2>측정할 사진 업로드</h2>
+          </div>
+          <div class="image-block">
+            <div id="drop-file" class="drag-file">
+              <img
+                src=""
+                alt="미리보기 이미지"
+                class="preview"
+                id="face-image"
+              />
+              <div id="result">
+                <a id="output">여기에 결과물 올릴거예요!</a>
+              </div>
+            </div>
+          </div>
+          <div class="start-block">
+            <div class="start-btn">
+              <label class="file-label" for="chooseFile">Upload File</label>
+            </div>
+            <input
+              class="file"
+              id="chooseFile"
+              type="file"
+              onchange="dropFile.handleFiles(this.files)"
+              accept="image/png, image/jpeg, image/gif"
+            />
+            <div class="next-btn" id="next-btn" onclick="sendImage()">
+              <label class="next" id="next-btn-message">NEXT</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="upload_file.js"></script>
+  </body>
+</html>
